@@ -1,2 +1,2 @@
 # virusgeeks-api
-Virus Geeks API test
+Virus Geeks API
