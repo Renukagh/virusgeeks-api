@@ -1,26 +1,23 @@
 {
-  "name": "nodejsapi",
+  "name": "nodejs-crud-app",
   "version": "1.0.0",
-  "description": "Virus Geeks node js API",
-  "main": "index.js",
+  "description": "Basic CRUD application with nodejs mongodb expressjs",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "node server",
+    "watch": "nodemon server --ignore public/",
+    "start": "npm run watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Renukagh/virusgeeks-api.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Mayur Nalwala",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Renukagh/virusgeeks-api/issues"
-  },
-  "homepage": "https://github.com/Renukagh/virusgeeks-api#readme",
+  "private": true,
   "dependencies": {
-    "devenv": "^1.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongodb": "^3.6.9",
-    "nodeman": "^1.1.2"
+    "mongoose": "^5.9.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.2"
   }
 }
