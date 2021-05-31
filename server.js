@@ -25,7 +25,8 @@ require('./Models/Posts');
 // require app.js
 const app = require('./app');
 
-// start the server on port 3000
-const server = app.listen(3000, () => {
+// start the server on port 5000
+const PORT = process.env.PORT || 5000;
+const server = app.listen(PORT, () => {
   console.log(`Express running → PORT ${server.address().port}`);
 })
